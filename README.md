@@ -1,48 +1,123 @@
-# CZP Recruitment Portal — Stole This Game
+# CZP // Recruitment Portal
 
-Minimal, static, single-page website for **Stole This Game**, framed as a recruitment portal for **Core Zion Protocol (CZP)**, the fictional hacktivist organization in the game. **Filiki Eteria Games** is the real developer/studio identity.
+**The system is broken. You weren't invited here by accident.**
 
-This version is based on the final supplied `GDD.md` (November 2026). The GDD is the source of truth; the website is a concise public-facing presentation. The private GDD is **not included** in this package.
+The official recruitment portal for **Core Zion Protocol (CZP)** — a fictional hacktivist organization from *Stole This Game*, a first-person stealth-hacking game in development by **Filiki Eteria Games**.
 
-## Preview locally
+This website is designed as an extension of the game's universe: part recruitment interface, part development showcase.
 
-From this folder run:
+**[ENTER THE RECRUITMENT PORTAL](https://filiki-eteria.github.io/czp-recruitment-portal/)**
+
+---
+
+## About Stole This Game
+
+*Stole This Game* is a single-player, first-person stealth-hacking experience built around observation, infiltration, and player-driven problem-solving.
+
+Players take the role of a new recruit of Core Zion Protocol, an underground organization challenging powerful systems through digital and physical infiltration.
+
+The game combines several planned gameplay systems:
+
+- **Reconnaissance & Exploitation** — identify vulnerable devices, research exploits, and compromise security infrastructure.
+- **Stealth & Guard AI** — navigate patrols, manage visibility and noise, and avoid detection.
+- **Security Subsystems** — manipulate surveillance cameras, doors, and other connected infrastructure.
+- **Duel Anchors** — a dedicated system for positioning first-person digital katana encounters.
+- **Manual Backdoor** — establish recovery points at designated terminals while preserving meaningful consequences.
+
+The game is designed around handcrafted environments, multiple infiltration approaches, and player mastery rather than traditional character upgrades.
+
+**Development status:** Pre-production / Early development.
+
+*Gameplay systems described above represent the intended design and are not all implemented.*
+
+## The Recruitment Portal
+
+Rather than building a conventional promotional landing page, the goal was to create a website that feels like part of the game itself.
+
+The portal serves three purposes:
+
+**Worldbuilding.** Introduce Core Zion Protocol through its own fictional recruitment interface.
+
+**Game Design Showcase.** Present selected gameplay systems alongside the challenges and reasoning behind their design.
+
+**Development Transparency.** Share milestone progress, location development status, and authentic development logs as the project evolves.
+
+The portal is intentionally lightweight, responsive, and accessible without requiring a frontend framework.
+
+## Technology
+
+| Component | Technology |
+|---|---|
+| Structure | HTML5 |
+| Styling | CSS3 |
+| Interactivity | Vanilla JavaScript |
+| Content management | JSON |
+| Hosting | GitHub Pages |
+
+No frontend frameworks, build pipelines, or backend services are required.
+
+Content is separated from presentation, allowing development updates without modifying the page structure.
+
+## Project Structure
+
+```text
+czp-recruitment-portal/
+├── index.html
+├── styles.css
+├── script.js
+├── data/
+│   └── content.json
+└── assets/
+    ├── czp-emblem.png
+    └── favicon.png
+```
+
+## Development Updates
+
+The portal is maintained alongside the development of *Stole This Game*.
+
+The public content file, `data/content.json`, controls:
+
+- Design case statuses: `DESIGNED`, `PROTOTYPED`, `IMPLEMENTED`.
+- Gameplay demonstrations, displayed only when enabled and available.
+- Development milestones and their completion states.
+- Independent progress tracking for Warehouse, Factory, and Office.
+- Development logs documenting actual project progress.
+- Links to the project repository and future playable demo.
+
+The portal is intended to evolve with the game rather than present unfinished features as completed work.
+
+## Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Kode-n-Rolla/czp-recruitment-portal.git
+cd czp-recruitment-portal
+```
+
+Start a local server:
 
 ```bash
 python -m http.server 8000
 ```
 
-Visit `http://localhost:8000`. Opening `index.html` directly via `file://` may prevent the JSON from loading.
+Open `http://localhost:8000` in your browser.
 
-## GitHub Pages
+A local server is recommended because the website loads its content from `data/content.json` using the Fetch API.
 
-1. Create a repository in the account/organization of your choice.
-2. Upload the **contents** of this folder to the repository root.
-3. Under **Settings → Pages**, select **Deploy from a branch**, `main`, `/ (root)`.
-4. Use the Pages URL displayed by GitHub.
+## About the Developer
 
-## Update the site
+**Filiki Eteria Games** is the independent developer identity behind *Stole This Game*.
 
-Edit `data/content.json`:
+The project brings together interests in software engineering, cybersecurity, interactive systems, and game design.
 
-- `roadmap[].completed`: `true` or `false` (all default to `false` until you confirm the milestone is complete).
-- `cases[].status`: `DESIGNED`, `PROTOTYPED`, or `IMPLEMENTED`.
-- `cases[].media`: a relative `.webm` or `.mp4` path, e.g. `assets/duel-anchors.webm`; empty means the video placeholder remains. Video has controls and does not autoplay.
-- `logs[]`: short public-facing development records. Expandable text lives in `body`.
-- `project.demoUrl`: empty = `ACCESS TRAINING` scrolls to Dev Logs. An HTTPS URL makes the button open the demo instead.
-- `project.githubUrl`: set to your **verified** GitHub organization/repository URL to show the GitHub footer link. Empty hides the link.
+The goal is to build a stealth-hacking experience where understanding the environment matters more than following a predefined solution.
 
-## Assets
+---
 
-- `assets/czp-emblem.png` — the original emblem supplied by the user; not replaced with an internet search result.
-- `assets/favicon.png` — small resized derivative of the original emblem.
+**Stole This Game** — In Development  
+**Core Zion Protocol** — Fictional Hactivist Organization  
+**Filiki Eteria Games** — Independent Game Development Studio
 
-## Design accuracy
-
-- All four cases are marked `DESIGNED` until their implementation is verified.
-- The save mechanic is **Manual Backdoor**, as described in GDD §5.5 and §7.5. The GDD has one older reference to “Automatic Backdoor” in §2; its dedicated system sections and release scope consistently specify Manual Backdoor.
-- Guard Hearing is a distance-based movement-noise investigation system, **not** detection from opening doors or complex sound propagation.
-- Cameras grant subsystem access; on Normal/Hard the player can use individual temporary `SPOOF FEED`, while on Easy compromised cameras ignore the player for the current attempt.
-- The roadmap matches the eight milestones in GDD §8.2–8.9. All 15 authored contracts are included as a milestone and release requirement in GDD §8.8, §8.10 and §8.12.
-- No release dates, invented screenshots, Steam page, or claim of implemented gameplay.
-- `ACCESS TRAINING` scrolls to Dev Logs until a demo URL is configured.
+*Observe. Infiltrate. Exploit. Make a difference.*
