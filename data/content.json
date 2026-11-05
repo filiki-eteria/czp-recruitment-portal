@@ -1,0 +1,71 @@
+{
+  "project": {
+    "name": "Stole This Game",
+    "studio": "Filiki Eteria Games",
+    "organization": "Core Zion Protocol",
+    "demoUrl": "",
+    "githubUrl": ""
+  },
+  "roadmap": [
+    {"name": "Technical Foundation", "completed": false},
+    {"name": "Core Gameplay Systems", "completed": false},
+    {"name": "First Playable Warehouse", "completed": false},
+    {"name": "Warehouse Playtest Demo", "completed": false},
+    {"name": "Core Gameplay Validation", "completed": false},
+    {"name": "Campaign Expansion", "completed": false},
+    {"name": "15 Additional Contracts", "completed": false},
+    {"name": "Polish & Release Preparation", "completed": false}
+  ],
+  "locations": [
+    {
+      "name": "WAREHOUSE",
+      "description": "First playable location & playtest demo",
+      "status": "PENDING"
+    },
+    {
+      "name": "FACTORY",
+      "description": "Industrial infiltration environment",
+      "status": "PENDING"
+    },
+    {
+      "name": "OFFICE",
+      "description": "Interconnected security environment",
+      "status": "PENDING"
+    }
+  ],
+  "cases": [
+    {
+      "id": "duel-anchors", "number": "01", "name": "Duel Anchors", "status": "DESIGNED",
+      "challenge": "Keep first-person Digital Duels readable in crowded, handcrafted levels.",
+      "decision": "Use tested Player/Guard anchor pairs and brief glitch transitions instead of dynamically finding combat space. Restore positions and security states afterward.",
+      "focus": ["Combat readability", "Authored spaces", "Scope control"], "hasMedia": false, "media": ""
+    },
+    {
+      "id": "manual-backdoor", "number": "02", "name": "Manual Backdoor", "status": "DESIGNED",
+      "challenge": "Let players resume unfinished infiltrations without making failed operations reversible or saving the entire dynamic world.",
+      "decision": "Players physically reach safe terminals to install or update one Backdoor. Recovery restores persistent progress, not temporary guard positions or camera spoofing.",
+      "focus": ["Diegetic saving", "Player choice", "State management"], "hasMedia": false, "media": ""
+    },
+    {
+      "id": "guard-hearing", "number": "03", "name": "Guard Hearing", "status": "DESIGNED",
+      "challenge": "Make noisy movement matter without turning every sound into an unfair instant alarm.",
+      "decision": "Movement generates simple distance-based noise events. Guards investigate the last-heard position; only visual confirmation triggers an intrusion alarm.",
+      "focus": ["Readable stealth", "Predictable AI", "Scope control"], "hasMedia": false, "media": ""
+    },
+    {
+      "id": "security-subsystems", "number": "04", "name": "Security Subsystems", "status": "DESIGNED",
+      "challenge": "Make hacking change infiltration choices rather than automatically disable every security measure.",
+      "decision": "Exploit a nearby vulnerable device to access its connected subsystem. Camera access reveals detection zones and enables individual feed spoofing on Normal/Hard; access-control systems can unlock restricted doors and windows.",
+      "focus": ["Systems design", "Tactical choices", "Interconnected access"], "hasMedia": false, "media": ""
+    }
+  ],
+  "logs": [
+    {
+      "tag": "PRE-PRODUCTION",
+      "date": "2026-11-04",
+      "title": "Game Design Document Completed",
+      "summary": "The foundation of Stole This Game is now documented. Core mechanics, mission structure, progression, and development milestones have been defined.",
+      "body": "The GDD establishes the scope of the project: three handcrafted locations, stealth-hacking gameplay, security subsystems, Duel Anchors, Manual Backdoor, and a campaign followed by additional contracts. The next challenge is turning these designs into a playable experience."
+    }
+  ]
+}
