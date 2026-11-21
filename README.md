@@ -2,7 +2,7 @@
 
 **The system is broken. You weren't invited here by accident.**
 
-The official recruitment portal for **Core Zion Protocol (CZP)** — a fictional hacktivist organization from *Stole This Game*, a first-person stealth-hacking game in development by **Filiki Eteria Games**.
+The official recruitment portal for **Core Zion Protocol (CZP)** — a fictional hacktivist organization from *Steal This Game*, a first-person stealth-hacking game in development by **Filiki Eteria Games**.
 
 This website is designed as an extension of the game's universe: part recruitment interface, part development showcase.
 
@@ -10,9 +10,9 @@ This website is designed as an extension of the game's universe: part recruitmen
 
 ---
 
-## About Stole This Game
+## About Steal This Game
 
-*Stole This Game* is a single-player, first-person stealth-hacking experience built around observation, infiltration, and player-driven problem-solving.
+*Steal This Game* is a single-player, first-person stealth-hacking experience built around observation, infiltration, and player-driven problem-solving.
 
 Players take the role of a new recruit of Core Zion Protocol, an underground organization challenging powerful systems through digital and physical infiltration.
 
@@ -74,7 +74,7 @@ czp-recruitment-portal/
 
 ## Development Updates
 
-The portal is maintained alongside the development of *Stole This Game*.
+The portal is maintained alongside the development of *Steal This Game*.
 
 The public content file, `data/content.json`, controls:
 
@@ -108,7 +108,7 @@ A local server is recommended because the website loads its content from `data/c
 
 ## About the Developer
 
-**Filiki Eteria Games** is the independent developer identity behind *Stole This Game*.
+**Filiki Eteria Games** is the independent developer identity behind *Steal This Game*.
 
 The project brings together interests in software engineering, cybersecurity, interactive systems, and game design.
 
@@ -116,7 +116,7 @@ The goal is to build a stealth-hacking experience where understanding the enviro
 
 ---
 
-**Stole This Game** — In Development  
+**Steal This Game** — In Development  
 **Core Zion Protocol** — Fictional Hactivist Organization  
 **Filiki Eteria Games** — Independent Game Development Studio
 
